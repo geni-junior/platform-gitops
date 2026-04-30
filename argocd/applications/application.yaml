@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: api-enterprise-test
+  name: app-hello-nodejs
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/geni-junior/api-enterprise-test.git
+    repoURL: https://github.com/geni-junior/app-hello-nodejs.git
     targetRevision: main
     path: k8s
 
